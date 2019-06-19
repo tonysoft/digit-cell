@@ -101,6 +101,7 @@ class digitCell extends PolymerElement {
     constructor() {
         super();
         this.value = -1;
+        this.size = 100;
     }
     upperright(value) {
         var onOrOff = "lineOff"
@@ -115,9 +116,6 @@ class digitCell extends PolymerElement {
             case 9:
                 onOrOff = "lineOn";
                 break;
-            default:
-                onOrOff = "lineOff";
-                break
         }
         return onOrOff;
     }
@@ -132,9 +130,6 @@ class digitCell extends PolymerElement {
             case 9:
                 onOrOff = "lineOn";
                 break;
-            default:
-                onOrOff = "lineOff";
-                break
         }
         return onOrOff;
     }
@@ -147,9 +142,6 @@ class digitCell extends PolymerElement {
             case 8:
                 onOrOff = "lineOn";
                 break;
-            default:
-                onOrOff = "lineOff";
-                break
         }
         return onOrOff;
     }
@@ -167,9 +159,6 @@ class digitCell extends PolymerElement {
             case 9:
                 onOrOff = "lineOn";
                 break;
-            default:
-                onOrOff = "lineOff";
-                break
         }
         return onOrOff;
     }
@@ -185,9 +174,6 @@ class digitCell extends PolymerElement {
             case 9:
                 onOrOff = "lineOn";
                 break;
-            default:
-                onOrOff = "lineOff";
-                break
         }
         return onOrOff;
     }
@@ -203,9 +189,6 @@ class digitCell extends PolymerElement {
             case 9:
                 onOrOff = "lineOn";
                 break;
-            default:
-                onOrOff = "lineOff";
-                break
         }
         return onOrOff;
     }
@@ -220,9 +203,6 @@ class digitCell extends PolymerElement {
             case 8:
                 onOrOff = "lineOn";
                 break;
-            default:
-                onOrOff = "lineOff";
-                break
         }
         return onOrOff;
     }
