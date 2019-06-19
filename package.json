@@ -1,0 +1,27 @@
+{
+  "name": "digit-cell",
+  "version": "1.0.0",
+  "description": "A Polymer 3 Component which represents a single Digit within some component or application like a Digital Clock",
+  "main": "digit-cell.js",
+  "bundleDependencies": false,
+  "dependencies": {
+    "@polymer/polymer": "^3.0.0"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonysoft/digit-cell.git"
+  },
+  "keywords": [
+    "web-components",
+    "polymer",
+    "digit",
+    "digital-clock"
+  ],
+  "author": "Tony Sukiennik",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/tonysoft/digit-cell/issues"
+  },
+  "homepage": "https://github.com/tonysoft/digit-cell#readme"
+}
