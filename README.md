@@ -3,7 +3,7 @@
 
 ## &lt;digit-cell&gt;
 
-The `digit-cell` element displays an icon. By default an icon renders as a 24px
+The `digit-cell` element represents a single Digit within some component or application like a Digital Clock
 square.
 
 See: [Demo](https://tonysoft.github.io/digit-cell).
@@ -13,7 +13,7 @@ See: [Demo](https://tonysoft.github.io/digit-cell).
 ### Installation
 
 ```
-npm install --save @polymer/iron-icon
+npm install --save digit-cell
 ```
 
 ### In an HTML file
@@ -22,17 +22,11 @@ npm install --save @polymer/iron-icon
 <html>
   <head>
     <script type="module">
-      import '@polymer/iron-icon/iron-icon.js';
+      import 'digit-cell.js';
     </script>
   </head>
   <body>
-    <iron-icon src="demo/location.png"></iron-icon>
-
-    <!-- You can use an icon from an imported iconset. -->
-    <script type="module">
-      import '@polymer/iron-icons/iron-icons.js';
-    </script>
-    <iron-icon icon="search"></iron-icon>
+    <digit-cell value="7" size="50"></digit-cell>
   </body>
 </html>
 ```
@@ -40,15 +34,14 @@ npm install --save @polymer/iron-icon
 ### In a Polymer 3 element
 
 ```js
-import {PolymerElement} from '@polymer/polymer/polymer-element.js';
-import {html} from '@polymer/polymer/lib/utils/html-tag.js';
+import {html, PolymerElement} from '@polymer/polymer/polymer-element.js';
 
-import '@polymer/iron-icon/iron-icon.js';
+import 'digit-cell.js';
 
 class ExampleElement extends PolymerElement {
   static get template() {
     return html`
-      <iron-icon src="demo/location.png"></iron-icon>
+      <digit-cell value="7" size="50"></digit-cell>
     `;
   }
 }
@@ -73,8 +66,7 @@ npm install -g polymer-cli
 ### Running the demo locally
 
 ```sh
-polymer serve --npm
-open http://127.0.0.1:<port>/demo/
+polymer serve -o
 ```
 
 ### Running the tests
