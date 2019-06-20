@@ -1,6 +1,6 @@
 {
   "name": "digit-cell",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A Polymer 3 Component which represents a single Digit within some component or application like a Digital Clock",
   "main": "digit-cell.js",
   "bundleDependencies": false,
