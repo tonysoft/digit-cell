@@ -1,14 +1,12 @@
-[![Published on NPM](https://img.shields.io/npm/v/@polymer/iron-icon.svg)](https://www.npmjs.com/package/@polymer/iron-icon)
-[![Build status](https://travis-ci.org/PolymerElements/iron-icon.svg?branch=master)](https://travis-ci.org/PolymerElements/iron-icon)
-[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://webcomponents.org/element/@polymer/iron-icon)
+[Published on NPM](https://www.npmjs.com/package/digit-cell)
 
-## &lt;iron-icon&gt;
 
-The `iron-icon` element displays an icon. By default an icon renders as a 24px
+## &lt;digit-cell&gt;
+
+The `digit-cell` element displays an icon. By default an icon renders as a 24px
 square.
 
-See: [Documentation](https://www.webcomponents.org/element/@polymer/iron-icon),
- [Demo](https://www.webcomponents.org/element/@polymer/iron-icon/demo/demo/index.html).
+See: [Demo](https://tonysoft.github.io/digit-cell).
 
 ## Usage
 
