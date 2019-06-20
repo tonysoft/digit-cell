@@ -12,7 +12,16 @@ Copyright (c) 2019 Tony Sukiennik. All rights reserved.
   </script>
 </head>
 <body>
-  <script type="module">
+  <script>
+    var value = 0;
+    setInterval(function() {
+      if (value === 9) {
+        value = -1;
+      }
+      value++;
+      var digitCell = document.querySelector("digit-cell");
+      digitCell.value = value;
+    }, 1000)
   </script>
 
   <div>
@@ -21,3 +30,4 @@ Copyright (c) 2019 Tony Sukiennik. All rights reserved.
 
 </body>
 </html>
+ 
