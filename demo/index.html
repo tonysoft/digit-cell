@@ -6,27 +6,54 @@ Copyright (c) 2019 Tony Sukiennik. All rights reserved.
 <html>
 <head>
   <title>digit-cell demo</title>
-  <!-- <script src="https://unpkg.com/@webcomponents/webcomponentsjs@^2.0.0/webcomponents-loader.js"></script> -->
   <script type="module">
-    import '../digit-cell.js';
+    import 'https://unpkg.com/@webcomponents/shadycss/entrypoints/apply-shim.js?module';
+    import 'https://unpkg.com/tonysoft@^1.4.21/generic-container.js?module'
+    import 'https://unpkg.com/digit-cell/digit-cell.js?module'
   </script>
+  <style>
+  </style>
 </head>
-<body>
+<body style="overflow: hidden;">
   <script>
+    window.addEventListener("resize", windowResize);
+
+    function windowResize(e) {
+      var genericContainers = document.querySelectorAll("*[best-fit]");
+      genericContainers.forEach(function(genericContainer) {
+        if (genericContainer.bestFit) {
+          var width = window.innerWidth;
+          var height = window.innerHeight;
+          genericContainer.scaleContent(width, height);
+        }
+      })
+    }
+
     var value = 0;
+    var initial = true;
+    var timeToInit = 0;
+    var interval = 1000;
     setInterval(function() {
-      if (value === 9) {
-        value = -1;
-      }
-      value++;
+      timeToInit += interval;
       var digitCell = document.querySelector("digit-cell");
-      digitCell.value = value;
-    }, 1000)
+      if (digitCell.upperright) {
+        if (initial) {
+          windowResize();
+          initial = false;
+          console.log(timeToInit);
+        }
+        if (value === 9) {
+          value = -1;
+        }
+        value++;
+        digitCell.value = value;
+      }
+    }, interval)
   </script>
 
-  <div>
-    <digit-cell value="0" size="200"></digit-cell>
-  </div>
+  <generic-container best-fit>
+    <digit-cell slot="content" value="0" size="200"></digit-cell>
+  </generic-container>
 
 </body>
 </html>
